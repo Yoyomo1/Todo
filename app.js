@@ -29,14 +29,17 @@ function addItemToList(itemValue, hoursValue) {
   listItem_li.setAttribute("class", "list-item");
   itemsList_ul.appendChild(listItem_li);
 
+  // Span element to remove items
+  const close_span = document.createElement("span");
+  close_span.setAttribute("class", "remove-item");
+  listItem_li.appendChild(close_span);
+
   // Add item in second column
   const hourItem_li = document.createElement("li");
   const textNodeHour = document.createTextNode(hoursValue);
   hourItem_li.appendChild(textNodeHour);
   hourItem_li.setAttribute("class", "list-hour");
   hoursList_ul.appendChild(hourItem_li);
-
-  console.log("test");
 }
 
 main();

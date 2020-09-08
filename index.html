@@ -9,13 +9,18 @@
   <body>
     <main class="container">
       <div class="input-container">
-        <input type="text" id="item" name="item" />
-        <input type="text" id="hours" name="hours" />
+        <input
+          type="text"
+          id="item"
+          name="item"
+          autofocus
+          autocomplete="false"
+        />
+        <input type="text" id="hours" name="hours" autocomplete="false" />
         <button id="btn">Add</button>
       </div>
       <div class="list-container">
         <ul class="items-list"></ul>
-        <ul class="hours-list"></ul>
       </div>
     </main>
     <script src="app.js"></script>
